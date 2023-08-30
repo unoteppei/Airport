@@ -92,11 +92,16 @@
 
 .airport-posts {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .link-info {
   text-align: center;
+}
+
+.guest {
+  text-align: center;
+  color: red;
 }
 
 //リンク
@@ -202,6 +207,10 @@
 }
 
 .airport-posts {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.guest {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
