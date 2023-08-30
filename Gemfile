@@ -100,3 +100,8 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'webdrivers'
 end
+
+#グラフズ
+group :development do
+  gem 'rails-erd'
+end
