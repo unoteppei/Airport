@@ -42,3 +42,8 @@
 ・　投稿機能<br>
 ・　フリーワード検索機能<br>
 ・　地図検索(Google maps API)<br>
+
+## ER図
+
+<img width="638" alt="スクリーンショット 2023-08-30 19 45 28" src="https://github.com/unoteppei/Airport/assets/143475813/90c8e4b8-b593-45c4-bdb4-70fa9ed31c60">
+
