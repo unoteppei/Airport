@@ -83,6 +83,7 @@ test:
 #
 production:
   <<: *default
-  database: Airport_production
-  username: Airport
+  database: <%= ENV['AIRPORT_DATABASE'] %>
+  username: <%= ENV['AIRPORT_USER'] %>
   password: <%= ENV['AIRPORT_DATABASE_PASSWORD'] %>
+  host: <%= ENV['AIRPORT_HOST'] %>
