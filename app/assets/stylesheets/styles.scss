@@ -152,6 +152,7 @@
 
 .no-search {
   margin-top: 10px;
+  text-align: center;
 }
 
 //投稿関連
@@ -161,8 +162,11 @@
   font-size: 20px;
 }
 
+.table {
+  margin: auto;
+}
+
 .post-index th {
-  text-align: center;
   width:15%;
 }
 
