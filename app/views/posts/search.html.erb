@@ -29,4 +29,7 @@
       <% end %>
     </tbody>
   </table>
+  <% if @posts.count == 0 %>
+    <p class="no-search">検索結果がありませんでした</p>
+  <% end %>
 </section>
