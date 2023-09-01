@@ -22,8 +22,8 @@
                   </p>
                   <%= form_with model: @user, url: users_edit_url(@user), action: :update, method: :post, local: true do |f| %>
                     <div class="file">
-                      <label :image, class="button is-info is-light is-fullwidth">
-                        <%= f.file_field :image, class: "file-input", onchange: "this.form.submit();" %>
+                      <label :avatar, class="button is-info is-light is-fullwidth">
+                        <%= f.file_field :avatar, class: "file-input", onchange: "this.form.submit();" %>
                           <i class="fas fa-upload"></i>&nbsp;&nbsp;&nbsp; 画像アップロード
                       </label>
                     </div>
