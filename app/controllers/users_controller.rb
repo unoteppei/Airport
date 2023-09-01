@@ -3,6 +3,9 @@ class UsersController < ApplicationController
 
   def character; end
 
+  def image
+  end
+  
   def show
     @user = User.find(params[:id])
   end
@@ -20,6 +23,6 @@ class UsersController < ApplicationController
   private
 
   def current_user_params
-    params.permit(:about, :status, :avatar)
+    params.permit(:about, :status, :avatar, :image)
   end
 end
