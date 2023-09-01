@@ -76,6 +76,9 @@ gem 'rails-i18n'
 #環境変数
 gem 'dotenv-rails'
 
+#画像投稿
+gem 'carrierwave'
+
 #画像調整
 gem 'mini_magick'
 
