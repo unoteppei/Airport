@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   get '/character', to: 'users#character'
   get '/users/:id', to: 'users#show', as: 'user'
   get 'posts/search', to: 'posts#search'
-
   post '/users/edit', to: 'users#update'
 
   resources :maps, only: [:index]
