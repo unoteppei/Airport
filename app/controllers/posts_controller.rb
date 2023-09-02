@@ -9,9 +9,6 @@ class PostsController < ApplicationController
     @posts = Post.all.order(created_at: :desc)
   end
 
-  def show
-  end
-
   def new
     @user = current_user.id
     @post = Post.new
@@ -25,6 +22,34 @@ class PostsController < ApplicationController
       redirect_to posts_path
     else
       render :new
+    end
+  end
+
+  def show
+    @post = Post.find(params[:id])
+  end
+  
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    @post = Post.find(params[:id])
+    @post.user_id = current_user.id
+    if @post.update(post_params)
+      flash[:notice] = '投稿を更新しました'
+      redirect_to posts_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    if @post.destroy
+      flash[:notice] = '投稿を削除しました'
+      redirect_to posts_path
     end
   end
 
