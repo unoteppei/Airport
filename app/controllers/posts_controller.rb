@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user!
 
   def index
+    @posts = Post.select("id")
     @posts = current_user.posts.all.order(created_at: :desc)
   end
 
@@ -28,7 +29,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
   end
-  
+
   def edit
     @post = Post.find(params[:id])
   end
