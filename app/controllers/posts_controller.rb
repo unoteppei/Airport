@@ -5,8 +5,11 @@ class PostsController < ApplicationController
     @posts = current_user.posts.all.order(created_at: :desc)
   end
 
+  def allindex
+    @posts = Post.all.order(created_at: :desc)
+  end
+
   def show
-    
   end
 
   def new

@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'maps/index'
   get '/character', to: 'users#character'
   get '/users/:id', to: 'users#show', as: 'user'
+  get 'posts/allindex', to: 'posts#allindex'
   get 'posts/search', to: 'posts#search'
   post '/users/edit', to: 'users#update'
 
