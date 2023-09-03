@@ -14,7 +14,7 @@
         <tr>
           <td>
             <%= link_to user_path(post.user), class:"user" do %>
-              <figure class="image is-48x48">
+              <figure class="image is-48x48 mb-3">
                 <%= image_tag avatar_url(post.user), class: "is-rounded" %>
               </figure>
               <%= post.user.full_name %>
