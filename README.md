@@ -1,8 +1,8 @@
 # Go Airport
 
 ## サービス概要
-
-気軽に自分の好きな空港の魅力の投稿や投稿 空港場所を検索できるサービスです。
+空港に関する投稿や検索サイトです。<br>
+気軽に自分の好きな空港の魅力の投稿や投稿・空港場所を検索できます。
 
 <img width="1436" alt="スクリーンショット 2023-08-10 9 53 12" src="https://github.com/uno-teppei/Work/assets/102563081/9b71504e-d19c-4b5e-8720-7e61203cbceb">
 
@@ -30,6 +30,7 @@
 ・ RSpec<br>
 ・ Rubocop<br>
 ・ Heroku<br>
+・ Google maps API<br>
 
 ## 機能一覧
 
