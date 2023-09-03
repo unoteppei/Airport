@@ -10,11 +10,11 @@
             <div class="card">
               <!-- 画像 -->
               <div class="card-content is-horizontal-center is-flex">
-                <figure class="image is-128x128 m-auto">
+                <figure class="image is-256x256 m-auto">
                   <% if avatar_url(current_user) %>
                     <%= image_tag avatar_url(current_user)%>
                   <% else %>
-                    <i class="fas fa-user-plus"></i>
+                    <%= image_tag "icon_default_avatar.jpg" %>
                   <% end %>
                 </figure>
               </div>
