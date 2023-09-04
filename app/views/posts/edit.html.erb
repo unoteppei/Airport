@@ -2,7 +2,7 @@
   <div class="post-container">
     <h2>編集</h2>
   
-    <%= form_with model: @post, url: posts_path, local: true do |f| %>
+    <%= form_with model: @post, url: posts_path, method: :post, local: true do |f| %>
       <%= render 'layouts/error_messages', model: f.object %>
       <%= f.hidden_field :user_id, value: current_user.id %>
       <div class="post">
