@@ -36,7 +36,6 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    @post.user_id = current_user.id
     if @post.update(post_params)
       flash[:notice] = '投稿を更新しました'
       redirect_to posts_path
