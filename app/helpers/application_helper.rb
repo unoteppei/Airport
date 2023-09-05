@@ -5,7 +5,7 @@ module ApplicationHelper
     elsif user.image?
       user.image
     else
-      ActionController::Base.helpers.asset_path('icon_default_avatar.jpg')
+      ActionController::Base.helpers.asset_path('icon_default_avatar.png')
     end
   end
 end
