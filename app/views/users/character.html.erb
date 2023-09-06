@@ -11,11 +11,7 @@
               <!-- 画像 -->
               <div class="card-content is-horizontal-center is-flex">
                 <figure class="image is-256x256 m-auto">
-                  <% if avatar_url(current_user) %>
-                    <%= image_tag avatar_url(current_user)%>
-                  <% else %>
-                    <%= image_tag "icon_default_avatar.png" %>
-                  <% end %>
+                  <%= image_tag avatar_url(current_user)%>
                 </figure>
               </div>
               <div class="card-content">
