@@ -29,6 +29,7 @@
   </div>
       <!-- ログインしていたら -->
       <% else %>
+        <div class="search mr-4"><%= render "shared/search" %></div>
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-end">
             <div class="navbar-item has-dropdown is-hoverable" style="margin-right: 100px;">
@@ -54,16 +55,6 @@
         </div>
       <% end %>            
 </nav>
-
-<% if (user_signed_in?) %>
-  <nav class="navbar has-shadow" style="z-index: 3;">
-    <div class="container">
-      <div class="navbar">
-        <div class="search"><%= render "shared/search" %></div>
-      </div>
-    </div>
-  </nav>
-<% end %>
 
 <script>
 $(document).ready(function() {
