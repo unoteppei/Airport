@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'maps#index'
+  root to: 'posts#map'
 
   devise_for :users,
              path_names: { sign_up: 'register', sign_in: 'login', edit: 'profile', sign_out: 'logout' },
@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     post 'users/guest_sign_in', to: 'users/sessions#guest_sign_in'
   end
 
-  get 'maps/index'
+  get 'posts/map'
   get '/character', to: 'users#character'
   get '/users/:id', to: 'users#show', as: 'user'
   get 'posts/allindex', to: 'posts#allindex'
