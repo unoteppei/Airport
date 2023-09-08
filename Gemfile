@@ -98,6 +98,7 @@ gem 'ransack'
 gem 'high_voltage'
 
 gem 'geocoder'
+gem 'gon'
 
 #テスト
 group :development, :test do
