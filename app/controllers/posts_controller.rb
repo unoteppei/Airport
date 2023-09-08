@@ -68,6 +68,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:id, :airport_name, :prefecture, :city, :impression, :image).merge(user_id: current_user.id)
+    params.require(:post).permit(:id, :airport_name, :prefecture, :city, :impression, :image,  :latitude, :longitude).merge(user_id: current_user.id)
   end
 end
