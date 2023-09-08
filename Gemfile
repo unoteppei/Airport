@@ -97,6 +97,8 @@ gem 'ransack'
 #静的ページ作成
 gem 'high_voltage'
 
+gem 'geocoder'
+
 #テスト
 group :development, :test do
   gem 'rspec-rails', '~> 5.0.0'
