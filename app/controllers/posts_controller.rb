@@ -53,6 +53,7 @@ class PostsController < ApplicationController
   end
 
   def map
+    @posts = Post.all
   end
 
   def search
