@@ -1,0 +1,42 @@
+<div class="map-search"><h1>空港を探す</h1></div>
+
+<div class="airport-map">
+  <input id="address" type="textbox" placeholder="空港名で検索">
+  <input id="sbtn" type="button" value="検索" onclick="codeAddress()">
+</div>
+
+<div id='map'></div>
+
+<style>
+#map {
+  height: 600px;
+  width: 100%;
+  margin-top: 30px;
+}
+</style>
+
+<script>
+  let map
+
+    function initMap(){
+      geocoder = new google.maps.Geocoder()
+
+      map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 35.68123620000001, lng:139.7671248},
+          zoom: 12
+      });
+
+      (function(){
+          let contentString = "住所：<%= @post.airport_name %>"; 
+
+          let marker = new google.maps.Marker({
+              position:{lat: <%= @post.latitude %>, lng: <%= @post.longitude %>},
+              map: map,
+              title: contentString
+          });
+
+        })();
+      }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['API_KEY']%>&callback=initMap" async defer></script>

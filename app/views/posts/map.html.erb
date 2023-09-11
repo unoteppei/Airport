@@ -23,22 +23,19 @@
 
       map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 35.68123620000001, lng:139.7671248},
-          zoom: 12,
+          zoom: 12
       });
 
-
-      <% @posts.each do |post| %>
-          (function(){
+      (function(){
           let contentString = "住所：<%= post.airport_name %>"; 
 
           let marker = new google.maps.Marker({
-              position:{lat: <%= post.latitude %>, lng: <%= post.longitude %>},
+              position:{lat: <%= @post.latitude %>, lng: <%= @post.longitude %>},
               map: map,
               title: contentString
           });
 
-          })();
-      <% end %>
+        })();
       }
 </script>
 
