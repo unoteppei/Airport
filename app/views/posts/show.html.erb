@@ -1,42 +1,31 @@
-<div class="map-search"><h1>空港を探す</h1></div>
-
-<div class="airport-map">
-  <input id="address" type="textbox" placeholder="空港名で検索">
-  <input id="sbtn" type="button" value="検索" onclick="codeAddress()">
-</div>
-
-<div id='map'></div>
-
-<style>
-#map {
-  height: 600px;
-  width: 100%;
-  margin-top: 30px;
-}
-</style>
-
-<script>
-  let map
-
-    function initMap(){
-      geocoder = new google.maps.Geocoder()
-
-      map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 35.68123620000001, lng:139.7671248},
-          zoom: 12
-      });
-
-      (function(){
-          let contentString = "住所：<%= @post.airport_name %>"; 
-
-          let marker = new google.maps.Marker({
-              position:{lat: <%= @post.latitude %>, lng: <%= @post.longitude %>},
-              map: map,
-              title: contentString
-          });
-
-        })();
-      }
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['API_KEY']%>&callback=initMap" async defer></script>
+<section class="section">
+  <h2>投稿詳細</h2>
+  <table class="table">
+    <thead class="post-index">
+      <th>投稿者</th>
+      <th>画像</th>
+      <th>空港名</th>
+      <th>都道府県</th>
+      <th>市名</th>
+      <th>コメント</th>
+    </thead>
+    <tbody class="post-info">
+        <tr>
+          <td>
+            <%= link_to user_path(@post.user), class:"user" do %>
+              <figure class="image is-48x48 mb-3">
+                <%= image_tag avatar_url(@post.user), class: "is-rounded" %>
+              </figure>
+              <%= @post.user.full_name %>
+            <% end %>
+          </td>
+          <td><%= image_tag @post.image[0] %></td>
+          <td><%= @post.airport_name %></td>
+          <td><%= @post.prefecture %></td>
+          <td><%= @post.city %></td>
+          <td><%= @post.impression %></td>
+        </tr>
+    </tbody>
+  </table>
+  <%= link_to  "トップページに戻る", root_path, class: "button is-info is-light is-fullwidth mt-6 mb-6" %>
+</section>

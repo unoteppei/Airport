@@ -37,7 +37,7 @@
                         });
                         let infowindow = new google.maps.InfoWindow({
                             position:{lat: <%= @latlng[0] %>, lng: <%= @latlng[1] %>},
-                            content: "<%= post.airport_name %>"
+                            content: "<a href='<%= post_url(post.id) %>'><%= post.airport_name %></a>"
                         })
                         marker.addListener('click', function() {
                           infowindow.open(map, marker);
