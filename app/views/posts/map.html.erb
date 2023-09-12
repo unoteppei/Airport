@@ -30,7 +30,6 @@
                         });
                         let infowindow = new google.maps.InfoWindow({
                             position:{lat: <%= @latlng[0] %>, lng: <%= @latlng[1] %>},
-                            content:"<a href='<%= posts_search_path %>'' target='_blank'><%= post.airport_name %></a>"
                         })
                     })();
                 <% end %>
