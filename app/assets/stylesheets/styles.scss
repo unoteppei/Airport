@@ -119,14 +119,24 @@
   text-align: center;
 }
 
+.word-search {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.word-search h1 {
+  font-size: 30px;
+}
+
 .map-search {
   text-align: center;
-  margin: 10px 30px;
-  padding: 10px 30px;
+  margin-top: 200px;
+  margin-bottom: 30px;
 }
 
 .map-search h1 {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .airport-map {
@@ -270,5 +280,9 @@
 }
 
 .footer-title {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.word-search {
   font-family: 'Noto Sans JP', sans-serif;
 }
