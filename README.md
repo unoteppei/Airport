@@ -4,7 +4,8 @@
 空港に関する投稿や検索サイトです。<br>
 気軽に自分の好きな空港の魅力の投稿や投稿・空港場所を検索できます。
 
-<img width="1436" alt="スクリーンショット 2023-08-10 9 53 12" src="https://github.com/uno-teppei/Work/assets/102563081/9b71504e-d19c-4b5e-8720-7e61203cbceb">
+<img width="1437" alt="スクリーンショット 2023-09-14 17 53 21" src="https://github.com/unoteppei/Airport/assets/143475813/af9565d8-f43c-4a63-bfa7-17594c1179ac">
+
 
 ## 作成に至った背景
 
@@ -50,7 +51,9 @@
 
 ## ER 図
 
-<img width="638" alt="スクリーンショット 2023-08-30 19 45 28" src="https://github.com/unoteppei/Airport/assets/143475813/90c8e4b8-b593-45c4-bdb4-70fa9ed31c60">
+
+<img width="961" alt="スクリーンショット 2023-09-14 18 12 12" src="https://github.com/unoteppei/Airport/assets/143475813/e190bc28-f2f2-4f19-b4da-408ab2695721">
+
 
 ## インフラ構成図
 
