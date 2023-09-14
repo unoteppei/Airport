@@ -11,7 +11,7 @@ class PostsController < ApplicationController
   end
 
   def postindex
-    @posts = Post.limit(4)
+    @posts = Post.all
   end
 
   def new
