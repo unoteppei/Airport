@@ -107,7 +107,4 @@ group :development, :test do
   gem 'webdrivers'
 end
 
-#グラフズ
-group :development do
-  gem 'rails-erd'
-end
+
