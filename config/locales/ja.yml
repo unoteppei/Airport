@@ -12,7 +12,7 @@ ja:
         email: メールアドレス
       post:
         airport_name: 空港名
-        prefecture: 県名
+        prefecture: 都道府県
         impression: 感想
         image: 画像
     errors:
