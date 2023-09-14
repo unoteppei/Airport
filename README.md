@@ -47,7 +47,7 @@
 　-画像投稿<br>
 　-編集 削除<br>
 ・フリーワード検索機能<br>
-・地図検索(Google maps API)<br>
+・地図(Google maps API)<br>
 
 ## ER 図
 
