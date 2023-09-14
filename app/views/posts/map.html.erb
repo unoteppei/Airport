@@ -2,11 +2,7 @@
   <h1>投稿検索<h1>
   <div class="search"><%= render "shared/search" %></div>
 </div>
-<div class="map-search"><h1>マップで空港を探す</h1></div>
-<div class="airport-map">
-  <input id="address" type="textbox" placeholder="空港名">
-  <input type="button" value="検索" onclick="codeAddress()">
-</div>
+<div class="postindex"><%= render "shared/postindex" %></div>
 <div id='map'></div>
 
 <style>
