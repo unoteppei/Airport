@@ -11,7 +11,7 @@ class PostsController < ApplicationController
   end
 
   def postindex
-    @posts = Post.all.order(created_at: :desc).limit(5)
+    @posts = Post.limit(4)
   end
 
   def new
