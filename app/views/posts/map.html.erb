@@ -1,0 +1,68 @@
+<div class="word-search">
+  <h1>投稿検索<h1>
+  <div class="search"><%= render "shared/search" %></div>
+</div>
+<div class="postindex"><%= render "shared/postindex" %></div>
+<div class="map-search"><h1>現在投稿されている空港一覧</h1></div>
+<div id='map'></div>
+
+<style>
+#map {
+  height: 600px;
+  width: 100%;
+  margin-top: 30px;
+}
+</style>
+
+<script>
+    let map;
+    let marker = [];
+    let infoWindow = [];
+        function initMap() {
+            geocoder = new google.maps.Geocoder()
+
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: 35.4448, lng:136.1899},
+              zoom: 5,
+            });
+
+            
+            <% @posts.each do |post| %>
+                <% results = Geocoder.search(post.airport_name) %>
+                <% if results.present? %>
+                    <% @latlng = results.first.coordinates %>
+                    (function() {
+                        let marker = new google.maps.Marker({
+                            position:{lat: <%= @latlng[0] %>, lng: <%= @latlng[1] %>},
+                            map: map
+                        });
+                        let infowindow = new google.maps.InfoWindow({
+                            position:{lat: <%= @latlng[0] %>, lng: <%= @latlng[1] %>},
+                            content: "<a href='<%= post_url(post.id) %>'><%= post.airport_name %></a>"
+                        })
+                        marker.addListener('click', function() {
+                          infowindow.open(map, marker);
+                        });
+                    })();
+                <% end %>
+            <% end %>
+        }
+        let geocoder
+
+function codeAddress(){
+  let inputAddress = document.getElementById('address').value;
+
+  geocoder.geocode( { 'address': inputAddress}, function(results, status) {
+    if (status == 'OK') {
+      map.setCenter(results[0].geometry.location);
+      let marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location
+      });
+    } else {
+      alert('該当する結果がありませんでした：' + status);
+    }
+  });   
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['API_KEY']%>&callback=initMap" async defer></script>
