@@ -27,7 +27,6 @@
 ・ Bulma<br>
 ・ PostgreSQL 14.6<br>
 ・ AWS S3<br>
-・ GitHub Actions CI/CD<br>
 ・ RSpec<br>
 ・ Rubocop<br>
 ・ Heroku<br>
