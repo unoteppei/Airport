@@ -29,6 +29,7 @@
 ・ AWS S3<br>
 ・ RSpec<br>
 ・ Rubocop<br>
+・ GitHub Actions<br>
 ・ Heroku<br>
 ・ Google maps API<br>
 
