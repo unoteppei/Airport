@@ -56,4 +56,5 @@
 
 ## インフラ構成図
 
-<img width="805" alt="スクリーンショット 2023-09-03 13 29 37" src="https://github.com/unoteppei/Airport/assets/143475813/49e6130a-2b5b-42ab-89cf-f436344de02c">
+<img width="805" alt="スクリーンショット 2023-09-25 10 00 45" src="https://github.com/unoteppei/Airport/assets/143475813/b5e8fdbe-626f-42df-bc0a-983b8076bd88">
+
