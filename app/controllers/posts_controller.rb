@@ -12,7 +12,13 @@ class PostsController < ApplicationController
   end
 
   def allindex
-    @posts = Post.all.order(created_at: :desc)
+    if params[:latest]
+      @posts = Post.all.latest
+    elsif params[:old]
+      @posts = Post.all.old
+    else
+      @posts = Post.all
+    end
   end
 
   def postindex
