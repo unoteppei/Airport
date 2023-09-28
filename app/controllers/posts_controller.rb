@@ -2,12 +2,23 @@ class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:map]
 
   def index
-    @posts = Post.select("id")
-    @posts = current_user.posts.all.order(created_at: :desc)
+    if params[:latest]
+        @posts = current_user.posts.all.latest
+      elsif params[:old]
+        @posts = current_user.posts.all.old
+      else
+        @posts = current_user.posts.all
+      end
   end
 
   def allindex
-    @posts = Post.all.order(created_at: :desc)
+    if params[:latest]
+      @posts = Post.all.latest
+    elsif params[:old]
+      @posts = Post.all.old
+    else
+      @posts = Post.all
+    end
   end
 
   def postindex
