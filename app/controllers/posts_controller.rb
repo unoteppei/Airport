@@ -73,13 +73,13 @@ class PostsController < ApplicationController
   end
 
   def search
-    @posts = if params[:word]
-               Post.where('airport_name LIKE ? OR prefecture LIKE ? OR city LIKE ? OR impression LIKE ?', "%#{params[:word]}%", "%#{params[:word]}%", "%#{params[:word]}%", "%#{params[:word]}%")
-             elsif
-               @posts.count == 0
-             else
-               Post.all
-             end
+    @posts =  if params[:word]
+                Post.where('airport_name LIKE ? OR prefecture LIKE ? OR city LIKE ? OR impression LIKE ?', "%#{params[:word]}%", "%#{params[:word]}%", "%#{params[:word]}%", "%#{params[:word]}%")
+              elsif
+                @posts.count == 0
+              else
+                Post.all
+              end
   end
 
   private
