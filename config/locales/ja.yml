@@ -13,7 +13,7 @@ ja:
       post:
         airport_name: 空港名
         prefecture: 都道府県
-        impression: 感想
+        impression: コメント
         image: 画像
     errors:
       messages:
