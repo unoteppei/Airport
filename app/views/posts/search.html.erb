@@ -8,6 +8,7 @@
       <th>都道府県</th>
       <th>市名</th>
       <th>コメント</th>
+      <th>空港の詳細</th>
     </thead>
     <tbody class="post-info">
       <% @posts.each do |post| %>
@@ -25,6 +26,7 @@
           <td><%= post.prefecture %></td>
           <td><%= post.city %></td>
           <td><%= post.impression %></td>
+          <td><%= link_to '空港の詳細', post_path(post.id) %><td>
         </tr>
       <% end %>
     </tbody>
