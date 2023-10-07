@@ -29,9 +29,36 @@
   </table>
   <h2>コメントする</h2>
   <%= form_with (model:[@post, @comment], method: :post, local: true) do |f| %>
-    <%= f.text_area :content %>
-    <%= f.hidden_field :post_id, value: @post.id %>
-    <%= f.submit "コメントする", class: "post-button" %>
+    <div class="post">
+      <%= f.text_area :content %>
+      <%= f.hidden_field :post_id, value: @post.id %>
+    </div>
+    <div class="post">
+      <%= f.submit "コメントする", class: "post-button" %>
+    </div>
   <% end %>
+  <h2>コメント一覧</h2>
+  <table class="table">
+    <thead class="post-index">
+      <th>コメント投稿者</th>
+      <th>コメント内容</th>
+    </thead> 
+    <tbody class="post-info">
+      <%= @comments.each do |comment| %>
+        <tr>
+          <td>
+            <%= link_to user_path(comment.user), class:"user" do %>
+              <figure class="image is-48x48 mb-3">
+                <%= image_tag avatar_url(comment.user), class: "is-rounded" %>
+              </figure>
+              <%= comment.user.full_name %>
+            <% end %>
+          </td>
+          <td><%= comment.content %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+    
   <%= link_to  "トップページに戻る", root_path, class: "button is-info is-light is-fullwidth mt-6 mb-6" %>
 </section>
