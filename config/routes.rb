@@ -18,5 +18,7 @@ Rails.application.routes.draw do
   post '/users/edit', to: 'users#update'
 
   resources :maps, only: [:index]
-  resources :posts
+  resources :posts do
+    resources :comments, only: [:create]
+  end
 end
