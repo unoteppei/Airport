@@ -3,6 +3,7 @@ ja:
     models:
       user: "ユーザー"
       post: "投稿"
+      comment: "コメント"
     attributes:
       user:
         full_name: 氏名
@@ -13,8 +14,10 @@ ja:
       post:
         airport_name: 空港名
         prefecture: 都道府県
-        impression: コメント
+        impression: 感想等
         image: 画像
+      comment:
+        content: コメント
     errors:
       messages:
         record_invalid: "バリデーションに失敗しました: %{errors}"
