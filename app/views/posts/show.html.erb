@@ -27,5 +27,11 @@
         </tr>
     </tbody>
   </table>
+  <h2>コメントする</h2>
+  <%= form_with (model:[@post, @comment], method: :post, local: true) do |f| %>
+    <%= f.text_area :content %>
+    <%= f.hidden_field :post_id, value: @post.id %>
+    <%= f.submit "コメントする", class: "post-button" %>
+  <% end %>
   <%= link_to  "トップページに戻る", root_path, class: "button is-info is-light is-fullwidth mt-6 mb-6" %>
 </section>
