@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
   belongs_to :user
-
+  has_many :comments
   has_many_attached :image
 
   validates :airport_name, presence: true
