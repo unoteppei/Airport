@@ -25,7 +25,7 @@ Google maps APIを使用して投稿された空港名に基づいてマーカ�
 ・ Bulma<br>
 ・ PostgreSQL 14.6<br>
 ・ AWS S3<br>
-・ GitHub Actions <br>
+・ GitHub ActionsCI/CD <br>
 ・ RSpec<br>
 ・ Rubocop<br>
 ・ Heroku<br>
