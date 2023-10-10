@@ -24,7 +24,7 @@ Google maps APIを使用して投稿された空港名に基づいてマーカ�
 ・ Ruby on Rails 6.0.6.1<br>
 ・ jquery 3.7.0<br>
 ・ Bulma<br>
-・ PostgreSQL 14.6<br>
+・ PostgreSQL 14.9<br>
 ・ AWS S3<br>
 ・ RSpec<br>
 ・ Rubocop<br>
