@@ -14,10 +14,6 @@
 ## こだわった点
 
 Google maps API を使用して投稿された空港名に基づいてマーカーを立て、投稿された空港の位置を確認できるようにしました。
-<<<<<<< HEAD
-=======
-
-> > > > > > > main
 
 ## 投稿方法
 
@@ -31,16 +27,12 @@ Google maps API を使用して投稿された空港名に基づいてマーカ�
 ・ Bulma<br>
 ・ PostgreSQL 14.9<br>
 ・ AWS S3<br>
-<<<<<<< HEAD
 ・ GitHub Actions <br>
-=======
-
-> > > > > > > main
-> > > > > > > ・ RSpec<br>
-> > > > > > > ・ Rubocop<br>
-> > > > > > > ・ GitHub Actions<br>
-> > > > > > > ・ Heroku<br>
-> > > > > > > ・ Google maps API<br>
+・ RSpec<br>
+・ Rubocop<br>
+・ GitHub Actions<br>
+・ Heroku<br>
+・ Google maps API<br>
 
 ## 機能一覧
 
