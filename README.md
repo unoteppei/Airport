@@ -13,6 +13,10 @@
 
 ## こだわった点
 Google maps APIを使用して投稿された空港名に基づいてマーカーを立て、投稿された空港の位置を確認できるようにしました。
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 ## 投稿方法
 
 新規登録　ログイン　ゲストログインのいずれかを行って行っていただき画面右上(PCの場合画像もしくはネーム スマートフォンやタブレッドの場合バーガーメニュー)に触れていただくとメニューを開くことができ投稿するリンクがございますのでそちらの方から投稿をお願いします。<br>
@@ -23,11 +27,15 @@ Google maps APIを使用して投稿された空港名に基づいてマーカ�
 ・ Ruby on Rails 6.0.6.1<br>
 ・ jquery 3.7.0<br>
 ・ Bulma<br>
-・ PostgreSQL 14.6<br>
+・ PostgreSQL 14.9<br>
 ・ AWS S3<br>
+<<<<<<< HEAD
 ・ GitHub ActionsCI/CD <br>
+=======
+>>>>>>> main
 ・ RSpec<br>
 ・ Rubocop<br>
+・ GitHub Actions<br>
 ・ Heroku<br>
 ・ Google maps API<br>
 
