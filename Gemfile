@@ -53,6 +53,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+gem 'omniauth-google-oauth2'
+
 # rubocop
 group :development do
   gem 'rubocop', require: false
@@ -88,15 +90,10 @@ gem 'pry-byebug'
 #s3
 gem 'aws-sdk-s3'
 
-#google認証
-gem 'omniauth-google-oauth2'
-
-#検索機能
-gem 'ransack'
-
 #静的ページ作成
 gem 'high_voltage'
 
+#google map
 gem 'geocoder'
 gem 'gon'
 
@@ -111,8 +108,3 @@ group :development do
   gem 'rails-erd'
 end
 
-gem "dockerfile-rails", ">= 1.5", :group => :development
-
-gem "sentry-ruby", "~> 5.12"
-
-gem "sentry-rails", "~> 5.12"
