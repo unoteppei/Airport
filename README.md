@@ -48,7 +48,7 @@ Google maps API を使用して投稿された空港名に基づいてマーカ�
 　-編集 削除<br>
 ・フリーワード検索機能<br>
 ・並び替え機能<br>
-・地図(Google maps API)<br>
+・地図機能(Google maps API)<br>
 
 ## ER 図
 
