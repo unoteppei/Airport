@@ -30,7 +30,6 @@ Google maps API を使用して投稿された空港名に基づいてマーカ�
 ・ GitHub Actions <br>
 ・ RSpec<br>
 ・ Rubocop<br>
-・ GitHub Actions<br>
 ・ Heroku<br>
 ・ Google maps API<br>
 
