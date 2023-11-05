@@ -42,7 +42,7 @@ Google maps API を使用して投稿された空港名に基づいてマーカ�
 　-ゲストログイン機能<br>
 ・プロフィール機能<br>
 　-アバター画像(ActiveStorage)<br>
-　-オフライン　オンライン　ステータス<br>
+　-オフライン　オンライン　ステータス機能<br>
 　-自己紹介<br>
 ・投稿機能<br>
 　-画像投稿<br>
@@ -51,7 +51,7 @@ Google maps API を使用して投稿された空港名に基づいてマーカ�
 ・並び替え機能<br>
 ・地図機能(Google maps API)<br>
 
-## ER 図
+## ER図
 
 <img width="961" alt="スクリーンショット 2023-09-14 18 12 12" src="https://github.com/unoteppei/Airport/assets/143475813/e190bc28-f2f2-4f19-b4da-408ab2695721">
 
